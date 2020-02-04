@@ -18,8 +18,6 @@ FROM webkitdev/scm:$IMAGE_TAG as msys2
 COPY msys2 C:/msys2
 
 RUN Register-SystemPath -Path C:\msys2\usr\bin; `
-    flex --version; `
-    bison --version; `
     diff3 --version; `
     make --version; `
     gperf --version; `
